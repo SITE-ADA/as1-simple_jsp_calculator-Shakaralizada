@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Simple Calculator</h2>
+
+
+<form action="./WEB-INF/sum.jsp">
+    <table border="1">
+        <thead>
+             <th>Find the Sum</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Number 1</td>
+                <td> <input type="number" name="n1" id="n1"> </td>
+            </tr>
+            <tr>
+                <td>Number 2</td>
+                <td> <input type="number" name="n2" id="n2"> </td> 
+            </tr>
+            <tr>
+                <td><td> <input type="submit" name="submit" value="="> </td></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+<form action="./WEB-INF/subtract.jsp">
+    <table border="1">
+        <thead>
+             <th>Find the Subtract</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Number 1</td>
+                <td> <input type="number" name="n1" id="n1"> </td>
+            </tr>
+            <tr>
+                <td>Number 2</td>
+                <td> <input type="number" name="n2" id="n2"> </td> 
+            </tr>
+            <tr>
+                <td><td> <input type="submit" name="submit" value="="> </td></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+<form action="./WEB-INF/multiple.jsp">
+    <table border="1">
+        <thead>
+             <th>Find the Multipication</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Number 1</td>
+                <td> <input type="number" name="n1" id="n1"> </td>
+            </tr>
+            <tr>
+                <td>Number 2</td>
+                <td> <input type="number" name="n2" id="n2"> </td> 
+            </tr>
+            <tr>
+                <td><td> <input type="submit" name="submit" value="="> </td></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+<form action="./WEB-INF/divide.jsp">
+    <table border="1">
+        <thead>
+             <th>Find the Divider</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Number 1</td>
+                <td> <input type="number" name="n1" id="n1"> </td>
+            </tr>
+            <tr>
+                <td>Number 2</td>
+                <td> <input type="number" name="n2" id="n2"> </td> 
+            </tr>
+            <tr>
+                <td><td> <input type="submit" name="submit" value="="> </td></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+<script>
+    var regex = /[0-9]|\./;
+     if( !regex.test(key) ) {
+        theEvent.returnValue = false;
+        if(theEvent.preventDefault) 
+            theEvent.preventDefault();
+    }    
+</script>
+
+</body>
+</html>
